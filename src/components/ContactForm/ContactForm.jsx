@@ -32,7 +32,6 @@ export const ContactForm = ({ onSave }) => {
       validationSchema={ContactSchema}
       onSubmit={(values, actions) => {
         onSave({ ...values, id: nanoid() });
-        console.log(values);
         actions.resetForm();
       }}
     >
